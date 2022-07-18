@@ -1,0 +1,68 @@
+header{
+    background-color: rgb(0, 255, 55);
+}
+nav{
+    background-color: aqua;
+}
+section{
+    grid-column: 1/4;
+    background-color: rgb(96, 84, 207);
+    color: rgb(197, 187, 174);
+}
+aside{
+    grid-column: 4/5;
+    background-color: rgb(9, 9, 15);
+    color: rgb(197, 187, 174);
+}
+footer{
+    background-color: brown;
+    color: rgb(197, 187, 174);
+}
+main{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.menu{
+    padding: 0px 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.menu>li{
+    float: left;
+}
+
+.menu li a{
+    background-color: black;
+    color: blanchedalmond;
+    text-decoration: none;
+    padding: 20px 80px;
+    display: block;
+}
+
+.menu li a:hover{
+    background-color: chocolate;
+}
+
+.menu li ul{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    min-width: 140px;
+}
+
+.menu li:hover > ul{
+    display: block;
+}
+.menu li ul li{
+    position: relative;
+}
+.menu li ul li{
+    right: 140px;
+}
